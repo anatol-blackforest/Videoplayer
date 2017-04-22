@@ -1,0 +1,169 @@
+body{
+    background:Darkgray
+}
+video{
+	background:black;
+	cursor:pointer
+}
+.player{
+	margin:0 auto;
+	position:relative;
+	//border:1px solid black;
+}
+.controls{
+	position:relative;
+	background:grey;
+	padding:10px;
+}
+label{
+	width:100%;
+	display:block;
+	text-align:center;
+	box-sizing:border-box;
+}
+.controls > *{
+	float:left
+}
+.controls button{
+	width:6%;
+	background-position:50% 50%;
+	height:30px;
+	text-align:center;
+	padding:2px 0;
+	cursor:pointer;
+	border:none;
+	text-indent:-10000px;
+	margin-left:2px;
+	background-color:white;
+	background-repeat: no-repeat;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	-webkit-background-size: contain;
+	background-size: contain;
+	outline:none;
+}
+.scale{
+	width:50%;
+	height:30px;
+	background:#000;
+	position:relative;
+}
+.scale> div{
+	height:30px;
+	background:#ccc;
+	width:0%;
+	float:left;
+	background: -webkit-linear-gradient( left, green, yellow);
+	background: -moz-linear-gradient( left, green, yellow);
+	background: -ms-linear-gradient( left, green, yellow);
+	background: linear-gradient( left, green, yellow);
+}
+.play{
+	position:relative;
+	margin-left:0;
+	background-image:url('../img/play.png');
+}
+.music{
+	position:relative;
+	float:right;
+	background-image:url('../img/music.png');
+}
+.stop{
+	position:relative;
+	float:right;
+	background-image:url('../img/stop.png');
+}
+.fullscreen{
+	position:relative;
+	float:right;
+	background-image:url('../img/fullscreen.png');
+}
+.controls{
+	position:relative;
+	overflow:hidden;
+	padding-bottom:10px;
+	color:rgb(196, 196, 196);
+}
+.time{
+	float:left;
+	width:10%;
+	padding:5px;
+	padding-left:10px;
+	padding-top:0;
+	position:relative;
+}
+
+.time .duration {
+	width:100%;
+	float:left;
+}
+
+.time .currenttime {
+	width:100%;
+	float:right
+}
+.volume{
+	width:10%;
+	float:left;
+	margin:0 5px 0 20px;
+	position:relative;
+	top:-5px
+}
+.volume input{
+	width:100%;
+}
+.filters{
+padding-top:0
+}
+.filters div{
+	position:relative;
+	float:left;
+	margin-right:10px;
+	width:15%;
+}
+.filters div input{
+	width:100%;
+	box-sizing:border-box;
+}
+.filters div.invert{
+	position:absolute;
+	bottom:10px;
+	right:0;
+	float: none;
+	width:auto;
+}
+.controls.filters button {
+	width: auto;
+	height: 30px;
+	text-align: center;
+	padding: 0 10px;
+	width:100px;
+	background:rgb(196, 196, 196);
+	text-indent:0
+}
+div.inverse{
+float:right;
+margin: 10px 0 0 0
+}
+
+div.inverse button{
+float:right;
+margin: 0
+}
+.playicon{
+    display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	cursor:pointer;
+	background:url('../img/play.png') 50% 50% no-repeat;
+	height:100%;
+	width:100%;
+	z-index:100
+}
+.hidden{
+    display:none
+}
+.visible{
+    display:block
+}
