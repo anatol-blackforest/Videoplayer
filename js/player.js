@@ -1,4 +1,4 @@
-﻿var Videomodule = {};
+﻿const Videomodule = {};
 
 Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", videoWidth = 944, videoHeight = 531){
 	
