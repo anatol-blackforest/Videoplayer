@@ -1,6 +1,6 @@
 ﻿var Videomodule = {};
 
-Videomodule.videoplayer = function(containerName, videoSrc, videoWidth = 944, videoHeight = 531){
+Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", videoWidth = 944, videoHeight = 531){
 	
 	window.onload = function(){		
 		
@@ -130,6 +130,7 @@ Videomodule.videoplayer = function(containerName, videoSrc, videoWidth = 944, vi
 		let inversion = false;
 		
 		video.setAttribute("src", videoSrc);
+		video.setAttribute("poster", posterSrc);
 		
 		var computingTime = function(duration){
 			let cHours = parseInt(duration/3600);
