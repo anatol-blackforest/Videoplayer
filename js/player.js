@@ -16,6 +16,7 @@ Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", vide
 		const video = document.createElement("video");
 		const playicon = document.createElement("div");
 		const controls = document.createElement("div");
+		const controlsWrapper = document.createElement("div");
 		const time = document.createElement("div");
 		const currenttimeSpan = document.createElement("span");
 		const durationSpan = document.createElement("span");
@@ -42,6 +43,7 @@ Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", vide
 		//set DOM classes
 		player.className = "player";
 		video.className = "video";
+		controlsWrapper.className = "controls-wrapper"
 		playicon.className = "playicon"
 		controls.className = "controls";
 		play.className = "play";
@@ -95,7 +97,10 @@ Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", vide
 		container.appendChild(player);
 		player.appendChild(video);
 		player.appendChild(playicon);
-		player.appendChild(controls);
+		player.appendChild(controlsWrapper);
+		controlsWrapper.appendChild(controls);
+		
+		
 		controls.appendChild(play);
 		controls.appendChild(time);
 		time.appendChild(durationSpan);
@@ -108,7 +113,7 @@ Videomodule.videoplayer = function(containerName, videoSrc, posterSrc = "", vide
 		controls.appendChild(music);
 		volume.appendChild(volumeLabel);
 		volume.appendChild(volumeRange);
-		player.appendChild(filters);
+		controlsWrapper.appendChild(filters);
 		
 		//text on elements
 		volumeLabel.textContent = "Громкость";

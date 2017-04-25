@@ -1,9 +1,10 @@
 body{
-    background:Darkgray
+    background: #606060
 }
 video{
 	background:black;
-	cursor:pointer
+	cursor:pointer;
+	border-radius:5px
 }
 .player{
 	margin:0 auto;
@@ -12,7 +13,7 @@ video{
 }
 .controls{
 	position:relative;
-	background:grey;
+	//background:grey;
 	padding:10px;
 }
 label{
@@ -21,12 +22,22 @@ label{
 	text-align:center;
 	box-sizing:border-box;
 }
+.controls-wrapper{
+border-radius: 10px;
+overflow: hidden;
+background: -webkit-linear-gradient(top, #484848, black);
+background: -moz-linear-gradient(top, #484848, black);
+background: -ms-linear-gradient(top, #484848, black);
+background: linear-gradient(top, #484848, black);
+border: 1px solid #606060
+}
 .controls > *{
 	float:left
 }
 .controls button{
 	width:6%;
 	background-position:50% 50%;
+	border-radius: 4px;
 	height:30px;
 	text-align:center;
 	padding:2px 0;
@@ -41,22 +52,26 @@ label{
 	-webkit-background-size: contain;
 	background-size: contain;
 	outline:none;
+	filter: brightness(70%);
 }
 .scale{
 	width:50%;
 	height:30px;
 	background:#000;
 	position:relative;
+	border-radius:2px;
+	overflow:hidden
 }
 .scale> div{
 	height:30px;
 	background:#ccc;
 	width:0%;
 	float:left;
-	background: -webkit-linear-gradient( left, green, yellow);
-	background: -moz-linear-gradient( left, green, yellow);
-	background: -ms-linear-gradient( left, green, yellow);
-	background: linear-gradient( left, green, yellow);
+	background: -webkit-linear-gradient( left, #484848, #fff);
+	background: -moz-linear-gradient( left, #484848, #fff);
+	background: -ms-linear-gradient( left, #484848, #fff);
+	background: linear-gradient( left, #484848, #fff);
+	//border-radius:2px
 }
 .play{
 	position:relative;
@@ -105,7 +120,7 @@ label{
 .volume{
 	width:10%;
 	float:left;
-	margin:0 5px 0 20px;
+	margin:0 5px 0 12px;
 	position:relative;
 	top:-5px
 }
@@ -139,8 +154,11 @@ padding-bottom:10px
 	text-align: center;
 	padding: 0 10px;
 	width:100px;
-	background:rgb(196, 196, 196);
-	text-indent:0
+	background:#606060;
+	text-indent:0;
+	background: -webkit-linear-gradient(bottom, grey, darkgrey);
+	filter: brightness(100%);
+	font-weight: bold;
 }
 div.inverse{
 float:right;
@@ -160,7 +178,8 @@ margin: 0
 	background:url('../img/play.png') 50% 50% no-repeat;
 	height:100%;
 	width:100%;
-	z-index:100
+	z-index:100;
+	filter: brightness(75%);
 }
 .hidden{
     display:none
