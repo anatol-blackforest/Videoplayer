@@ -1,5 +1,6 @@
 body{
-    background: #606060
+    background: #606060;
+	margin: 0;
 }
 video{
 	background:black;
@@ -8,8 +9,8 @@ video{
 }
 .player{
 	margin:0 auto;
-	position:relative;
-	//border:1px solid black;
+	position: relative;
+	margin-top: 8px;
 }
 .controls{
 	position:relative;
@@ -29,7 +30,7 @@ background: -webkit-linear-gradient(top, #484848, black);
 background: -moz-linear-gradient(top, #484848, black);
 background: -ms-linear-gradient(top, #484848, black);
 background: linear-gradient(top, #484848, black);
-border: 1px solid #606060
+border: none
 }
 .controls > *{
 	float:left
@@ -175,11 +176,11 @@ margin: 0
 	top:0;
 	left:0;
 	cursor:pointer;
-	background:url('../img/play.png') 50% 50% no-repeat;
+	background:url('../img/play_big.png') 50% 50% no-repeat;
 	height:100%;
 	width:100%;
 	z-index:100;
-	filter: brightness(75%);
+	//filter: brightness(75%);
 }
 .hidden{
     display:none
